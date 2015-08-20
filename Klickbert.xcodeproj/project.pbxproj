@@ -1,0 +1,416 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A634C8A1B85E154004180CD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A634C891B85E154004180CD /* AppDelegate.m */; };
+		4A634C8C1B85E154004180CD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A634C8B1B85E154004180CD /* main.m */; };
+		4A634C8E1B85E154004180CD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A634C8D1B85E154004180CD /* Images.xcassets */; };
+		4A634C911B85E154004180CD /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A634C8F1B85E154004180CD /* MainMenu.xib */; };
+		4A634C9D1B85E154004180CD /* KlickbertTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A634C9C1B85E154004180CD /* KlickbertTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4A634C971B85E154004180CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A634C7B1B85E154004180CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A634C821B85E154004180CD;
+			remoteInfo = Klickbert;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4A634C831B85E154004180CD /* Klickbert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Klickbert.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A634C871B85E154004180CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A634C881B85E154004180CD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4A634C891B85E154004180CD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4A634C8B1B85E154004180CD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4A634C8D1B85E154004180CD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4A634C901B85E154004180CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		4A634C961B85E154004180CD /* KlickbertTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KlickbertTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A634C9B1B85E154004180CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A634C9C1B85E154004180CD /* KlickbertTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KlickbertTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4A634C801B85E154004180CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A634C931B85E154004180CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4A634C7A1B85E154004180CD = {
+			isa = PBXGroup;
+			children = (
+				4A634C851B85E154004180CD /* Klickbert */,
+				4A634C991B85E154004180CD /* KlickbertTests */,
+				4A634C841B85E154004180CD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4A634C841B85E154004180CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4A634C831B85E154004180CD /* Klickbert.app */,
+				4A634C961B85E154004180CD /* KlickbertTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4A634C851B85E154004180CD /* Klickbert */ = {
+			isa = PBXGroup;
+			children = (
+				4A634C881B85E154004180CD /* AppDelegate.h */,
+				4A634C891B85E154004180CD /* AppDelegate.m */,
+				4A634C8D1B85E154004180CD /* Images.xcassets */,
+				4A634C8F1B85E154004180CD /* MainMenu.xib */,
+				4A634C861B85E154004180CD /* Supporting Files */,
+			);
+			path = Klickbert;
+			sourceTree = "<group>";
+		};
+		4A634C861B85E154004180CD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4A634C871B85E154004180CD /* Info.plist */,
+				4A634C8B1B85E154004180CD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4A634C991B85E154004180CD /* KlickbertTests */ = {
+			isa = PBXGroup;
+			children = (
+				4A634C9C1B85E154004180CD /* KlickbertTests.m */,
+				4A634C9A1B85E154004180CD /* Supporting Files */,
+			);
+			path = KlickbertTests;
+			sourceTree = "<group>";
+		};
+		4A634C9A1B85E154004180CD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4A634C9B1B85E154004180CD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4A634C821B85E154004180CD /* Klickbert */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A634CA01B85E154004180CD /* Build configuration list for PBXNativeTarget "Klickbert" */;
+			buildPhases = (
+				4A634C7F1B85E154004180CD /* Sources */,
+				4A634C801B85E154004180CD /* Frameworks */,
+				4A634C811B85E154004180CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Klickbert;
+			productName = Klickbert;
+			productReference = 4A634C831B85E154004180CD /* Klickbert.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4A634C951B85E154004180CD /* KlickbertTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A634CA31B85E154004180CD /* Build configuration list for PBXNativeTarget "KlickbertTests" */;
+			buildPhases = (
+				4A634C921B85E154004180CD /* Sources */,
+				4A634C931B85E154004180CD /* Frameworks */,
+				4A634C941B85E154004180CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A634C981B85E154004180CD /* PBXTargetDependency */,
+			);
+			name = KlickbertTests;
+			productName = KlickbertTests;
+			productReference = 4A634C961B85E154004180CD /* KlickbertTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4A634C7B1B85E154004180CD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Philipp Stadler";
+				TargetAttributes = {
+					4A634C821B85E154004180CD = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					4A634C951B85E154004180CD = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 4A634C821B85E154004180CD;
+					};
+				};
+			};
+			buildConfigurationList = 4A634C7E1B85E154004180CD /* Build configuration list for PBXProject "Klickbert" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4A634C7A1B85E154004180CD;
+			productRefGroup = 4A634C841B85E154004180CD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4A634C821B85E154004180CD /* Klickbert */,
+				4A634C951B85E154004180CD /* KlickbertTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4A634C811B85E154004180CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A634C8E1B85E154004180CD /* Images.xcassets in Resources */,
+				4A634C911B85E154004180CD /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A634C941B85E154004180CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4A634C7F1B85E154004180CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A634C8C1B85E154004180CD /* main.m in Sources */,
+				4A634C8A1B85E154004180CD /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A634C921B85E154004180CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A634C9D1B85E154004180CD /* KlickbertTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4A634C981B85E154004180CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A634C821B85E154004180CD /* Klickbert */;
+			targetProxy = 4A634C971B85E154004180CD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4A634C8F1B85E154004180CD /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A634C901B85E154004180CD /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4A634C9E1B85E154004180CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4A634C9F1B85E154004180CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4A634CA11B85E154004180CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Klickbert/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4A634CA21B85E154004180CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Klickbert/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4A634CA41B85E154004180CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KlickbertTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Klickbert.app/Contents/MacOS/Klickbert";
+			};
+			name = Debug;
+		};
+		4A634CA51B85E154004180CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KlickbertTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Klickbert.app/Contents/MacOS/Klickbert";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4A634C7E1B85E154004180CD /* Build configuration list for PBXProject "Klickbert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A634C9E1B85E154004180CD /* Debug */,
+				4A634C9F1B85E154004180CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A634CA01B85E154004180CD /* Build configuration list for PBXNativeTarget "Klickbert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A634CA11B85E154004180CD /* Debug */,
+				4A634CA21B85E154004180CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4A634CA31B85E154004180CD /* Build configuration list for PBXNativeTarget "KlickbertTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A634CA41B85E154004180CD /* Debug */,
+				4A634CA51B85E154004180CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4A634C7B1B85E154004180CD /* Project object */;
+}
