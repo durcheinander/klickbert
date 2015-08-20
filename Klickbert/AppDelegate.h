@@ -8,8 +8,13 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>
+@interface AppDelegate : NSObject <NSApplicationDelegate> {
+    NSString *saveDirectory;
+    NSInteger lastScreenshotIdx;
+}
 
+- (void)screenshotForEventOfType:(NSString *)eventType at:(NSPoint)location;
+- (NSBitmapImageRep*)takeScreenshot;
 
 @end
 
