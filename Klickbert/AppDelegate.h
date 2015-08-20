@@ -8,9 +8,12 @@
 
 #import <Cocoa/Cocoa.h>
 
+#import "ISO8601DateFormatter.h"
+
 @interface AppDelegate : NSObject <NSApplicationDelegate> {
     NSString *saveDirectory;
     NSInteger lastScreenshotIdx;
+    ISO8601DateFormatter *dateFormatter;
 }
 
 - (void)screenshotForEventOfType:(NSString *)eventType at:(NSPoint)location;

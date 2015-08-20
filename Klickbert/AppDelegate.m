@@ -17,6 +17,9 @@
     lastScreenshotIdx = 0;
     saveDirectory = nil;
     
+    dateFormatter = [[ISO8601DateFormatter alloc] init];
+    dateFormatter.includeTime = YES;
+    
     NSOpenPanel *panel = [NSOpenPanel openPanel];
     [panel setCanChooseDirectories:YES];
     [panel setCanChooseFiles:NO];
@@ -40,11 +43,11 @@
     ++lastScreenshotIdx;
     
     NSDate *now = [NSDate date];
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"YY-mm-dd HH:mm:ss"];
     NSString *formattedNow = [dateFormatter stringFromDate:now];
     
-    NSString *screenshotFilename = [NSString stringWithFormat:@"%@ - %@ - (%fx %fy) - %ld.png", formattedNow, eventType, location.x, location.y, (long)lastScreenshotIdx];
+    NSString *screenshotFilename = [NSString stringWithFormat:@"%@ -- %fx %fy -- %ld.png", formattedNow, location.x, location.y, (long)lastScreenshotIdx];
+    screenshotFilename = [screenshotFilename stringByReplacingOccurrencesOfString:@":" withString:@";"];
+    
     NSString *screenshotAbsPath = [NSString stringWithFormat:@"%@/%@", saveDirectory, screenshotFilename];
     
     NSBitmapImageRep *screenshot = [self takeScreenshot];
