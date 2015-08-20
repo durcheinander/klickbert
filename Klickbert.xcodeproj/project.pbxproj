@@ -12,6 +12,7 @@
 		4A634C8E1B85E154004180CD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A634C8D1B85E154004180CD /* Images.xcassets */; };
 		4A634C911B85E154004180CD /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A634C8F1B85E154004180CD /* MainMenu.xib */; };
 		4A634C9D1B85E154004180CD /* KlickbertTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A634C9C1B85E154004180CD /* KlickbertTests.m */; };
+		4A634CA81B85FDCB004180CD /* ISO8601DateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A634CA71B85FDCB004180CD /* ISO8601DateFormatter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,8 @@
 		4A634C961B85E154004180CD /* KlickbertTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KlickbertTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A634C9B1B85E154004180CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A634C9C1B85E154004180CD /* KlickbertTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KlickbertTests.m; sourceTree = "<group>"; };
+		4A634CA61B85FDCB004180CD /* ISO8601DateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISO8601DateFormatter.h; sourceTree = "<group>"; };
+		4A634CA71B85FDCB004180CD /* ISO8601DateFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISO8601DateFormatter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +79,8 @@
 		4A634C851B85E154004180CD /* Klickbert */ = {
 			isa = PBXGroup;
 			children = (
+				4A634CA61B85FDCB004180CD /* ISO8601DateFormatter.h */,
+				4A634CA71B85FDCB004180CD /* ISO8601DateFormatter.m */,
 				4A634C881B85E154004180CD /* AppDelegate.h */,
 				4A634C891B85E154004180CD /* AppDelegate.m */,
 				4A634C8D1B85E154004180CD /* Images.xcassets */,
@@ -211,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A634C8C1B85E154004180CD /* main.m in Sources */,
+				4A634CA81B85FDCB004180CD /* ISO8601DateFormatter.m in Sources */,
 				4A634C8A1B85E154004180CD /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
