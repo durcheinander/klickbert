@@ -13,9 +13,12 @@
 @interface AppDelegate : NSObject <NSApplicationDelegate> {
     NSString *saveDirectory;
     NSInteger lastScreenshotIdx;
+    NSStatusItem *statusItem;
     ISO8601DateFormatter *dateFormatter;
+    NSMenu *statusItemMenu;
 }
 
+- (void)handleStatusItemAction:(id)sender;
 - (void)screenshotForEventOfType:(NSString *)eventType at:(NSPoint)location;
 - (NSBitmapImageRep*)takeScreenshot;
 

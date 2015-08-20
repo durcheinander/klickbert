@@ -37,6 +37,35 @@
         [self screenshotForEventOfType:@"LeftClick"
                                     at:[event locationInWindow]];
     }];
+    
+    statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
+    NSStatusBarButton *statusButton = statusItem.button;
+    statusButton.title = @"Klickbert";
+    statusButton.target = self;
+    statusButton.action = @selector(handleStatusItemAction:);
+    [statusButton sendActionOn:(NSLeftMouseDownMask|NSRightMouseDownMask|NSLeftMouseUpMask|NSRightMouseUpMask)];
+}
+
+- (void)handleStatusItemAction:(id)sender {
+    
+    const NSUInteger buttonMask = [NSEvent pressedMouseButtons];
+    BOOL primaryDown = ((buttonMask & (1 << 0)) != 0);
+    BOOL secondaryDown = ((buttonMask & (1 << 1)) != 0);
+    // Treat a control-click as a secondary click
+    if (primaryDown && ([NSEvent modifierFlags] & NSControlKeyMask)) {
+        primaryDown = NO;
+        secondaryDown = YES;
+    }
+    
+    if (primaryDown) {
+        if (statusItemMenu == nil) {
+            NSMenu *menu = [[NSMenu alloc] initWithTitle:@""];
+            [menu addItemWithTitle:@"Quit" action:@selector(terminate:) keyEquivalent:@""];
+            statusItemMenu = menu;
+        }
+        [statusItem popUpStatusItemMenu:statusItemMenu];
+    }
+    
 }
 
 - (void)screenshotForEventOfType:(NSString *)eventType at:(NSPoint)location {
@@ -70,7 +99,7 @@
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
-    // Insert code here to tear down your application
+    [[NSStatusBar systemStatusBar] removeStatusItem:statusItem];
 }
 
 @end

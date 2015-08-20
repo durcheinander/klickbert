@@ -407,6 +407,7 @@
 				4A634CA21B85E154004180CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4A634CA31B85E154004180CD /* Build configuration list for PBXNativeTarget "KlickbertTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +416,7 @@
 				4A634CA51B85E154004180CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
