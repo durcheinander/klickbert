@@ -1,5 +1,5 @@
 # klickbert
-klickbert is a tiny and native mac application that takes a screenshot every time you click your left mouse button. It provides a wonderful way to visualize the progress of your next awesome project.
+klickbert is a tiny and native mac application that takes a screenshot every time you click your left mouse button or hit a key. It provides a wonderful way to visualize the progress of your next awesome project.
 
 ## File naming
 Some metadata is encoded in the filename to ease later  postprocessing. A typical filename looks like this:

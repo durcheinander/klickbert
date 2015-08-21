@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 
-const NSTimeInterval minScreenshotTimeDifference = 0.5;
+const NSTimeInterval minScreenshotTimeDifference = 30.0;
 
 @interface AppDelegate ()
 @end
