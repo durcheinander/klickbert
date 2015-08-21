@@ -4,12 +4,14 @@ klickbert is a tiny and native mac application that takes a screenshot every tim
 ## File naming
 Some metadata is encoded in the filename to ease later  postprocessing. A typical filename looks like this:
       
-      2015-08-20T14;38;51+0200 -- 54.000000x 7.003906y -- 1
+      2015-08-20T14;38;51+0200 -- LeftClick -- 54.000000x 7.003906y -- 1.png
       
 It contains, divided by double dashes:
 
 * Date similar to ISO 8601 but with `;` instead of `:`, since `:` is illegal in filenames (e.g. `2015-08-20T14;38;51+0200`),
-* X and Y position of the click in cartesian coordinates (e.g. `0.00x 0.00y` as the *bottom left*, not top left),
+* Type of Event, either `LeftClick` or `KeyDown`
+* For mouse events: X and Y position of the click in cartesian coordinates (e.g. `0.00x 0.00y` as the *bottom left*, not top left),
+* For key events: the character equivalent, e.g. `f`
 * consecutive number of the screenshot (e.g. `42`).
 
 ## Interface

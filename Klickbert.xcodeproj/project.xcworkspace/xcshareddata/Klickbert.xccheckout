@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>B7435BE2-0575-4CA9-9F8E-CDED9DCD1345</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>Klickbert</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>9881402ADC4CEF8F00E000591023490C12D9B40A</key>
 		<string>github.com:durcheinander/klickbert.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Klickbert.xcodeproj/project.xcworkspace</string>
+	<string>Klickbert.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>9881402ADC4CEF8F00E000591023490C12D9B40A</key>

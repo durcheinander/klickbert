@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+const NSTimeInterval minScreenshotTimeDifference = 0.5;
+
 @interface AppDelegate ()
 @end
 
@@ -33,9 +35,20 @@
         }
     }];
     
+    [NSEvent addGlobalMonitorForEventsMatchingMask:NSKeyDownMask handler:^(NSEvent *event) {
+        
+        NSString *meta = [event characters];
+        
+        [self screenshotForEventOfType:@"KeyDown" withMetadata:meta];
+    }];
+    
     [NSEvent addGlobalMonitorForEventsMatchingMask:NSLeftMouseDownMask handler:^(NSEvent *event) {
+        
+        NSPoint location = [event locationInWindow];
+        NSString *meta = [NSString stringWithFormat:@"%fx %fy", location.x, location.y];
+        
         [self screenshotForEventOfType:@"LeftClick"
-                                    at:[event locationInWindow]];
+                          withMetadata:meta];
     }];
     
     statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
@@ -68,20 +81,27 @@
     
 }
 
-- (void)screenshotForEventOfType:(NSString *)eventType at:(NSPoint)location {
-    ++lastScreenshotIdx;
+- (void)screenshotForEventOfType:(NSString *)eventType withMetadata:(NSString *)meta {
     
     NSDate *now = [NSDate date];
-    NSString *formattedNow = [dateFormatter stringFromDate:now];
+    NSTimeInterval lastScreenshotTimeDiff = [now timeIntervalSinceDate:lastScreenDate];
     
-    NSString *screenshotFilename = [NSString stringWithFormat:@"%@ -- %fx %fy -- %ld.png", formattedNow, location.x, location.y, (long)lastScreenshotIdx];
-    screenshotFilename = [screenshotFilename stringByReplacingOccurrencesOfString:@":" withString:@";"];
-    
-    NSString *screenshotAbsPath = [NSString stringWithFormat:@"%@/%@", saveDirectory, screenshotFilename];
-    
-    NSBitmapImageRep *screenshot = [self takeScreenshot];
-    NSData *data = [screenshot representationUsingType:NSPNGFileType properties:nil];
-    [data writeToFile:screenshotAbsPath atomically:NO];
+    if(lastScreenshotTimeDiff > minScreenshotTimeDifference || !lastScreenDate) {
+            ++lastScreenshotIdx;
+        
+        NSString *formattedNow = [dateFormatter stringFromDate:now];
+        
+        NSString *screenshotFilename = [NSString stringWithFormat:@"%@ -- %@ -- %@ -- %ld.png", formattedNow, eventType, meta, (long)lastScreenshotIdx];
+        screenshotFilename = [screenshotFilename stringByReplacingOccurrencesOfString:@":" withString:@";"];
+        
+        NSString *screenshotAbsPath = [NSString stringWithFormat:@"%@/%@", saveDirectory, screenshotFilename];
+        
+        NSBitmapImageRep *screenshot = [self takeScreenshot];
+        NSData *data = [screenshot representationUsingType:NSPNGFileType properties:nil];
+        [data writeToFile:screenshotAbsPath atomically:NO];
+        
+        lastScreenDate = now;
+    }
 }
 
 /**

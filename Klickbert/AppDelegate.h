@@ -16,10 +16,11 @@
     NSStatusItem *statusItem;
     ISO8601DateFormatter *dateFormatter;
     NSMenu *statusItemMenu;
+    NSDate *lastScreenDate;
 }
 
 - (void)handleStatusItemAction:(id)sender;
-- (void)screenshotForEventOfType:(NSString *)eventType at:(NSPoint)location;
+- (void)screenshotForEventOfType:(NSString *)eventType withMetadata:(NSString*)meta;
 - (NSBitmapImageRep*)takeScreenshot;
 
 @end
